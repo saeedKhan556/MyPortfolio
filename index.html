@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAEED KHAN - Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Add EmailJS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+  <script>
+    // Initialize EmailJS with your User ID
+    (function () {
+      emailjs.init("3z96EtlDfgAyz-7XL"); // Your User ID
+    })();
+  </script>
+  <style>
+    /* Gradient Animation for Navigation Bar */
+    .navbar {
+      width: 100%;
+      padding: 15px 0;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      background: linear-gradient(90deg, #ff7e5f, #feb47b, #6a11cb, #2575fc);
+      background-size: 400% 400%;
+      animation: gradientAnimation 6s infinite alternate;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      padding: 14px 20px;
+      display: inline-block;
+      position: relative;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .navbar a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar a:hover {
+      color: #222;
+      transform: scale(1.1);
+    }
+
+    .navbar a:hover::after {
+      transform: scaleX(1);
+    }
+
+   
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="business-logo.jpg" alt="Logo">
+        <span>SAEED KHAN</span>
+      </div>
+      <ul>
+        <li><a href="#about" class="nav-btn active">About</a></li>
+        <li><a href="#projects" class="nav-btn">Projects</a></li>
+        <li><a href="#skills" class="nav-btn">Skills</a></li>
+        <li><a href="#contact" class="nav-btn">Contact</a></li>
+        <a href="SAEED.pdf" class="nav-btn" download>Resume</a>
+        <li>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+
+          <a href="mailto:saeedkhan124658@gmail.com"><i class="fas fa-envelope"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content animate__animated animate__fadeInLeft">
+        <h1>Hi, I'm <span class="highlight">SAEED KHAN</span></h1>
+        <p>Data Analyst | Turning Data into Insights</p>
+        <a href="SAEED.pdf" class="btn" download>Download Resume</a>
+      </div>
+      <div class="hero-image animate__animated animate__fadeInRight">
+        <img src="Myphoto.jpeg" alt="Saeed Khan">
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeIn">About Me</h2>
+      <div class="about-content">
+        <div class="education-box">
+          <p>
+            Hi, I'm Saeed Khan, a passionate Data Analyst with experience in analyzing and visualizing data to drive business decisions. 
+            I specialize in Python, SQL, and Tableau. I love solving complex problems and uncovering insights from data.
+          </p>
+        </div>
+        <div class="about-details">
+          <div class="detail">
+            <div class="education-box">
+              <h3>Education</h3>
+              <ul>
+                <li><strong>Bachelor of Science in Computer Engineering</strong> - National University of Technology, 2025</li>
+              </ul>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="education-box">
+              <h3>Experience</h3>
+              <ul>
+                <li><strong>Data Analyst</strong> - Freelencer, 2024 - Present</li>
+                <li><strong>Junior Data Analyst</strong> - [Company Name], [Year] - [Year]</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Certifications Section -->
+        <div class="certification-box">
+          <h3>My Certifications</h3>
+          <p class="certification-description">These are the industry credentials that I’ve earned.</p>
+          <ul class="certifications">
+            <li>Google Data Analytics</li>
+            <li>Tableau Desktop Specialist</li>
+          </ul>
+          <div class="certification-images">
+            <img src="course2.jpeg" alt="Certification 1" class="certificate-img">
+            <img src="course4.jpeg" alt="Certification 2" class="certificate-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeIn">Projects</h2>
+      <div class="project-grid">
+        <div class="project-card animate__animated animate__fadeInUp">
+          <img src="Data-Vizualisation.png" alt="Project 1">
+          <h3>Sales Performance Dashboard</h3>
+          <p>Created an interactive dashboard using Tableau to analyze sales data and identify trends.</p>
+          <a href="project1.html" class="btn project-btn" target="_blank">View Details</a>
+        </div>
+        <div class="project-card animate__animated animate__fadeInUp animate__delay-1s">
+          <img src="project2 imgg.avif"Project 2">
+          <h3>COVID-19 Data Analysis</h3>
+          <p>Analyzed COVID-19 data using Python to visualize infection rates and vaccination progress.</p>
+          <a href="project2.html" class="btn project-btn" target="_blank">View Details</a>
+        </div>
+        <div class="project-card animate__animated animate__fadeInUp animate__delay-2s">
+          <img src="project 3 imgg.png" alt="Project 3">
+          <h3>Customer Segmentation</h3>
+          <p>Used SQL and Python to segment customers based on purchasing behavior.</p>
+          <a href="project3.html" class="btn project-btn" target="_blank">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeIn">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-row">
+          <div class="skill animate__animated animate__fadeInLeft">
+            <h3>Python</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%; text-align: center; font-size: medium;font-weight: bold;">90%</div>
+            </div>
+          </div>
+          <div class="skill animate__animated animate__fadeInRight">
+            <h3>SQL</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%; text-align: center; font-size: medium;font-weight: bold;">85%</div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill animate__animated animate__fadeInLeft">
+            <h3>Tableau</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%; text-align: center; font-size: medium;font-weight: bold;">90%</div>
+            </div>
+          </div>
+          <div class="skill animate__animated animate__fadeInRight">
+            <h3>Excel</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%; text-align: center; font-size: medium; font-weight: bold;">85%</div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill animate__animated animate__fadeInLeft">
+            <h3>Data Visualization</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%; text-align: center; font-size: medium; font-weight: bold;">80%</div>
+            </div>
+          </div>
+          <div class="skill animate__animated animate__fadeInRight">
+            <h3>Machine Learning</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%; text-align: center; font-size: medium; font-weight: bold;">80%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeIn">Contact Me</h2>
+      <form id="contact-form" class="animate__animated animate__fadeIn animate__delay-1s">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone (Optional)">
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  
+ <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <!-- Contact Me Section -->
+      <div class="footer-section">
+        <h3>Contact Me</h3>
+        <ul class="contact-info">
+          <li><i class="fas fa-map-marker-alt"></i> Sector I-12,Islamabbad, Pakistan</li>
+          <li><i class="fas fa-envelope"></i> saeedkhan124658@gmail.com</li>
+          <li><i class="fas fa-phone"></i> +92 3430996454</li>
+        </ul>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="footer-section">
+        <h3>Follow Me</h3>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="mailto:saeedkhan124658@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <p class="copyright">&copy; 2025 Saeed Khan. All rights reserved.</p>
+  </div>
+</footer>
+  <!-- Lightbox Overlay -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
